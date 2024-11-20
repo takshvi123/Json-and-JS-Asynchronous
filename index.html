@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JSON</h2>
+    <p id="string"></p>
+    <p id="name"></p>
+    <p id="age"></p>
+    <p id="grade"></p>
+
+
+    <script>
+        var json_obj={name:"takshvi",age:11,grade:6};
+        var json_str=JSON.stringify(json_obj)
+        document.getElementById("name").innerHTML="The girl's name is "+ json_obj.name;
+        document.getElementById("age").innerHTML = json_obj.age;
+        document.getElementById("grade").innerHTML = json_obj.grade;
+        document.getElementById("string").innerHTML = json_str;
+    </script>
+</body>
+</html>
